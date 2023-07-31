@@ -549,6 +549,54 @@ main {
 
 
 /**
+ * #project 
+ */
+
+ .listing { margin-bottom: 35px; }
+
+ .listing-title { margin-bottom: 20px; }
+ 
+ .listing-list {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+ }
+ 
+ .listing-item {
+   position: relative;
+   background: var(--border-gradient-onyx);
+   padding: 20px;
+   border-radius: 14px;
+   box-shadow: var(--shadow-2);
+   z-index: 1;
+ }
+ 
+ .listing-item::before {
+   content: "";
+   position: absolute;
+   inset: 1px;
+   background: var(--bg-gradient-jet);
+   border-radius: inherit;
+   z-index: -1;
+ }
+ 
+ .listing-icon-box { margin-bottom: 10px; }
+ 
+ .listing-icon-box img { margin: auto; }
+ 
+ .listing-content-box { text-align: left; }
+ 
+ .listing-item-title { margin-bottom: 7px; }
+ 
+ .listing-item-text {
+   color: var(--light-gray);
+   font-size: var(--fs-6);
+   font-weight: var(--fw-3);
+   line-height: 1.6;
+ }
+ 
+
+/**
  * #testimonials 
  */
 
